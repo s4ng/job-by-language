@@ -1,4 +1,4 @@
-package com.s4ng.stackcardgenerator
+package com.s4ng.stackcardgenerator.bootstrap
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
