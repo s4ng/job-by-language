@@ -11,8 +11,8 @@ class JobOpeningEntity(
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         var id: Long,
 
-        @ManyToOne
-        @JoinColumn(name = "id")
+        @ManyToOne(fetch = FetchType.LAZY)
+        @JoinColumn(name = "language_id")
         val language: LanguageEntity,
 
         val openings: Int,
