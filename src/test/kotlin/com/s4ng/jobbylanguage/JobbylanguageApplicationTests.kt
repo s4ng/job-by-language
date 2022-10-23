@@ -1,10 +1,10 @@
-package com.s4ng.stackcardgenerator
+package com.s4ng.jobbylanguage
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class StackcardgeneratorApplicationTests {
+class JobbylanguageApplicationTests {
 
     @Test
     fun contextLoads() {

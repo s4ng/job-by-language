@@ -1,1 +1,1 @@
-rootProject.name = "stackcardgenerator"
+rootProject.name = "jobbylanguage"

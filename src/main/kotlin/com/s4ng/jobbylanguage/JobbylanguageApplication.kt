@@ -1,11 +1,11 @@
-package com.s4ng.stackcardgenerator.bootstrap
+package com.s4ng.jobbylanguage
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class StackcardgeneratorApplication
+class JobbylanguageApplication
 
 fun main(args: Array<String>) {
-    runApplication<StackcardgeneratorApplication>(*args)
+    runApplication<JobbylanguageApplication>(*args)
 }
