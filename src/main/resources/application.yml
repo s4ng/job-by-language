@@ -1,0 +1,18 @@
+spring:
+  datasource: #database source 작성
+    url: jdbc:mysql://129.154.49.47:3306/jobbylanguage?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC&
+      allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true # 쿼리 스트링으로 UTF-8 인코딩 설정
+    username: root
+    password: 1111
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+
+  jpa:
+    hibernate:
+      ddl-auto: update # application 실행 시점에 기존 ddl 정보를 다 지우고 다시 실행시킨다.
+    properties:
+      hibernate:
+        #        show_sql: true # jpa, hibernate가 생성하는 모든 sql이 sout으로 찍힌다
+        # 운영환경에서는 sout이 아닌 log로 나타내야 한다
+        format_sql: true

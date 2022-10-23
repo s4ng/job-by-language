@@ -1,4 +1,4 @@
-package com.s4ng.jobbylanguage
+package com.s4ng.jobbylanguage.bootstrap
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
