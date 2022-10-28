@@ -5,5 +5,6 @@ enum class JobCategory {
     Game,
     Embedded,
     Application,
+    Language,
     Other
 }

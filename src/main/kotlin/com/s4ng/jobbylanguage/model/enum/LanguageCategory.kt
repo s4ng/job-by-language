@@ -1,7 +1,8 @@
 package com.s4ng.jobbylanguage.model.enum
 
-enum class LanguageCategory {
+enum class StackCategory {
     ProgrammingLanguage,
     Framework,
+    Keyword,
     Unknown
 }

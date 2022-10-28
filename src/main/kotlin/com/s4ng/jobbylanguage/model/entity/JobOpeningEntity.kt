@@ -1,23 +1,26 @@
 package com.s4ng.jobbylanguage.model.entity
 
+import lombok.AllArgsConstructor
+import lombok.NoArgsConstructor
 import java.time.ZonedDateTime
 import javax.persistence.*
 
 @Entity
 @Table(name = "job_opening")
-class JobOpeningEntity(
+@AllArgsConstructor
+@NoArgsConstructor
+class JobOpeningEntity (
 
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
-        var id: Long,
+        @Column(nullable = false)
+        var id: Long? = null,
 
         @ManyToOne(fetch = FetchType.LAZY)
-        @JoinColumn(name = "language_id")
-        val language: LanguageEntity,
+        @JoinColumn(name = "stack_id")
+        var stack: StackEntity? = null,
 
-        val openings: Int,
+        val value: Int? = null,
 
-        val createdTime: ZonedDateTime
-) {
-
-}
+        val createdTime: ZonedDateTime? = null
+)
