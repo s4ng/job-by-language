@@ -10,7 +10,7 @@ import org.springframework.scheduling.annotation.EnableScheduling
 @EntityScan("com.s4ng.jobbylanguage.model.entity")
 @EnableJpaRepositories("com.s4ng.jobbylanguage.repository")
 @EnableScheduling
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = ["com.s4ng.jobbylanguage"])
 class JobbylanguageApplication
 
 fun main(args: Array<String>) {
