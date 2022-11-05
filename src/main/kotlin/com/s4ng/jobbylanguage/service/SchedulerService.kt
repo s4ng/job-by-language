@@ -12,7 +12,7 @@ class SchedulerService(
 
     @Scheduled(cron = "0 0 5 * * *", zone = "Asia/Seoul")
     fun scheduleJob() {
-        val dtoList = webCrawlerService.getDataFromWeb()
+        val dtoList = webCrawlerService.dataFromWeb
         dtoList?.let { jobOpeningService.save(it) }
     }
 }
