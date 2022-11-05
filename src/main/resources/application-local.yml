@@ -1,6 +1,6 @@
 spring:
   datasource: #database source 작성
-    url: jdbc:mysql://129.154.49.47:3306/jobbylanguage?allowPublicKeyRetriebal=true&useSSL=false
+    url: jdbc:mysql://129.154.49.47:3306/jobbylanguage
     username: root
     password: 1111
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -13,6 +13,6 @@ spring:
     properties:
       hibernate:
         show_sql: true # jpa, hibernate가 생성하는 모든 sql이 sout으로 찍힌다
-#         운영환경에서는 sout이 아닌 log로 나타내야 한다
+        #         운영환경에서는 sout이 아닌 log로 나타내야 한다
         format_sql: true
     generate-ddl: true
