@@ -24,11 +24,11 @@ class WebCrawlerService {
 
         Logger.getLogger("com.gargoylesoftware").level = Level.OFF
         val page = webClient.getPage<HtmlPage>("https://www.sara" + "min.co.kr/zf_user/jobs/list/job-category")
-        webClient.waitForBackgroundJavaScript(50000)
+        webClient.waitForBackgroundJavaScript(200000)
 
         val itButton = page.getFirstByXPath<HtmlButton>("//*[@id=\"sp_main_wrapper\"]/div[2]/div/div[1]/div[2]/div[1]/button[6]")
         itButton.click<Page>()
-        webClient.waitForBackgroundJavaScript(50000)
+        webClient.waitForBackgroundJavaScript(200000)
 
         val buttonList: MutableList<HtmlButton> = ArrayList()
         var count = 1
