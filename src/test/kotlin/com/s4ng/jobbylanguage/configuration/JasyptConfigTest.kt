@@ -11,9 +11,9 @@ internal class JasyptConfigTest {
 
     @Test
     fun `암호화`() {
-        val url = "jdbc:mysql://129.154.49.47:3306/jobbylanguage?allowPublicKeyRetriebal=true&useSSL=false"
-        val username = "root"
-        val password = "1111"
+        val url = ""
+        val username = ""
+        val password = ""
 
         println(this.jasyptEncoding(url));
         println(this.jasyptEncoding(username));

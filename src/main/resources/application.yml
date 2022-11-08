@@ -1,8 +1,8 @@
 spring:
   datasource: #database source 작성
-    url: jdbc:mysql://129.154.49.47:3306/jobbylanguage?allowPublicKeyRetriebal=true&useSSL=false
-    username: root
-    password: 1111
+    url: ENC(Nsv9fohdNbgqHIwwzTZvNzDr00FSSuOkjxKpeV1Qp3XoYwAn3dZKejdrL9YHsQsRPjDcZ4Imdm+G0P72mVktwqIeUqagIxaW4UFdV36GvGaQoIpoxuUSrRGr2zrfHazS)
+    username: ENC(Qx+ss9Rro1FZ0nIrvGUkwA==)
+    password: ENC(QFSML5u1hQFjirf8zAyq0g==)
     driver-class-name: com.mysql.cj.jdbc.Driver
   jackson:
     property-naming-strategy: SNAKE_CASE
