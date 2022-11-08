@@ -16,3 +16,7 @@ spring:
 #         운영환경에서는 sout이 아닌 log로 나타내야 한다
         format_sql: true
     generate-ddl: true
+
+jasypt:
+  encryptor:
+    bean: jasyptStringEncryptor
