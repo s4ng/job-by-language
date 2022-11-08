@@ -2,7 +2,7 @@ spring:
   datasource: #database source 작성
     url: ENC(Nsv9fohdNbgqHIwwzTZvNzDr00FSSuOkjxKpeV1Qp3XoYwAn3dZKejdrL9YHsQsRPjDcZ4Imdm+G0P72mVktwqIeUqagIxaW4UFdV36GvGaQoIpoxuUSrRGr2zrfHazS)
     username: ENC(Qx+ss9Rro1FZ0nIrvGUkwA==)
-    password: ENC(QFSML5u1hQFjirf8zAyq0g==)
+    password: ENC(QwN8qu+dI5n8qkyB+msamg==)
     driver-class-name: com.mysql.cj.jdbc.Driver
   jackson:
     property-naming-strategy: SNAKE_CASE
