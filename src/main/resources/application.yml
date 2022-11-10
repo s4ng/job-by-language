@@ -1,3 +1,10 @@
+server:
+  port:
+    80
+  servlet:
+    encoding:
+      force-response: true
+
 spring:
   datasource: #database source 작성
     url: ENC(Nsv9fohdNbgqHIwwzTZvNzDr00FSSuOkjxKpeV1Qp3XoYwAn3dZKejdrL9YHsQsRPjDcZ4Imdm+G0P72mVktwqIeUqagIxaW4UFdV36GvGaQoIpoxuUSrRGr2zrfHazS)

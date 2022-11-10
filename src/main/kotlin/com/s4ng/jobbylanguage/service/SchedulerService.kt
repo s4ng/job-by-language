@@ -11,7 +11,7 @@ class SchedulerService(
         @Autowired val webCrawlerService: WebCrawlerService,
         @Autowired val jobOpeningService: JobOpeningService) {
 
-    @Scheduled(cron = "0 0 4 * * *", zone = "Asia/Seoul")
+    @Scheduled(cron = "0 10 5 * * *", zone = "Asia/Seoul")
     fun everyDayJob() {
         val jobOpenings = webCrawlerService.getDataFromWeb()
         jobOpeningService.save(jobOpenings)
