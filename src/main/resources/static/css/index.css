@@ -4,12 +4,30 @@
     justify-content: center;
 }
 
+.title-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background-color: #F9FAFB;
+}
+
 .statistics {
-    display: inline-block;
-    padding: 100px 20px 100px 20px;
-    width: 500px;
+    display: flex;
+    justify-content: center;
 }
 
 .statistics-2 {
     background-color: #F9FAFB;
+}
+
+.statistics-container {
+
+    display: inline-block;
+    padding: 20px;
+    width: 600px;
+}
+
+#footer {
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
