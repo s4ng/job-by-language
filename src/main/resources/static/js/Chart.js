@@ -2,11 +2,11 @@ const languageRankCtx = document.getElementById('language-rank').getContext('2d'
 const languageRankChart = new Chart(languageRankCtx, {
     type: 'bar',
     data: {
-        labels: ["c++", "c", "java", "11"],
+        labels: ["c++", "c", "java", "11", "test", "test", "test"],
         datasets: [{
             axis: 'y',
             label: 'languages',
-            data: [65, 59, 80, 81, 56, 55, 40],
+            data: [65, 59, 80, 81, 56, 55, 40, 10, 23, 42, 42],
             fill: false,
             backgroundColor: [
                 'rgba(255, 99, 132, 1)'

@@ -18,9 +18,9 @@ class JobOpeningEntity (
 
         @ManyToOne(fetch = FetchType.LAZY)
         @JoinColumn(name = "stack_id")
-        var stack: StackEntity? = null,
+        var stack: StackEntity,
 
-        val value: Int? = null,
+        val value: Int,
 
-        val createdTime: ZonedDateTime? = null
+        val createdTime: ZonedDateTime,
 )
