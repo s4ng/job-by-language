@@ -1,0 +1,15 @@
+#main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.statistics {
+    display: inline-block;
+    padding: 100px 20px 100px 20px;
+    width: 500px;
+}
+
+.statistics-2 {
+    background-color: #F9FAFB;
+}

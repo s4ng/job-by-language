@@ -11,21 +11,17 @@ internal class JasyptConfigTest {
 
     @Test
     fun `암호화`() {
-        val url = ""
-        val username = ""
-        val password = ""
+        val string = ""
 
-        println(this.jasyptEncoding(url));
-        println(this.jasyptEncoding(username));
-        println(this.jasyptEncoding(password));
+        println(this.jasyptEncoding(string))
     }
 
     fun jasyptEncoding(value: String): String {
 
-        val key = "s4ng95";
-        val pbeEnc = StandardPBEStringEncryptor();
-        pbeEnc.setAlgorithm("PBEWithMD5AndDES");
-        pbeEnc.setPassword(key);
-        return pbeEnc.encrypt(value);
+        val key = "s4ng95"
+        val pbeEnc = StandardPBEStringEncryptor()
+        pbeEnc.setAlgorithm("PBEWithMD5AndDES")
+        pbeEnc.setPassword(key)
+        return pbeEnc.encrypt(value)
     }
 }
