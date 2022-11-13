@@ -19,7 +19,7 @@ spring:
       ddl-auto: update # application 실행 시점에 기존 ddl 정보를 다 지우고 다시 실행시킨다.
     properties:
       hibernate:
-        show_sql: true # jpa, hibernate가 생성하는 모든 sql이 sout으로 찍힌다
+#        show_sql: true # jpa, hibernate가 생성하는 모든 sql이 sout으로 찍힌다
 #         운영환경에서는 sout이 아닌 log로 나타내야 한다
         format_sql: true
     generate-ddl: true

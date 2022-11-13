@@ -26,18 +26,18 @@ class MainService(@Autowired val jobOpeningRepository: JobOpeningRepository) {
 
 
         return StatisticsDataDto(
-                languageRank = this.createRankDto(languageEntities),
+                languageRank = this.createRankDto(languageEntities, true),
                 languageFlow = null,
-                frameworkRank = this.createRankDto(frameworkEntities),
+                frameworkRank = this.createRankDto(frameworkEntities, true),
                 frameworkFlow = null,
-                databaseRank = this.createRankDto(databaseEntities),
+                databaseRank = this.createRankDto(databaseEntities, true),
                 databaseFlow = null,
-                lowLanguageRank = null,
-                lowFrameworkRank = null
+                lowLanguageRank = this.createRankDto(languageEntities, false),
+                lowFrameworkRank = this.createRankDto(frameworkEntities, false)
         )
     }
 
-    fun createRankDto(jobOpenings: List<JobOpeningEntity>): RankDataDto {
+    fun createRankDto(jobOpenings: List<JobOpeningEntity>, isTop: Boolean): RankDataDto {
 
         val aMonthAgo: ZonedDateTime = ZonedDateTime.now().minusMonths(1L)
         var jobMap = HashMap<StackEntity, SimpleJobOpening>()
@@ -51,11 +51,20 @@ class MainService(@Autowired val jobOpeningRepository: JobOpeningRepository) {
             }
         }
 
-        val sorts = jobMap.values.sortedBy { e -> e.value / e.count }.reversed()
+        val sorts: List<SimpleJobOpening>
+        val count: Int
+        if (isTop) {
+            sorts = jobMap.values.sortedBy { e -> e.value / e.count }.reversed()
+            count = 6;
+        } else {
+            sorts = jobMap.values.sortedBy { e -> e.value / e.count }
+            count = 4;
+        }
+
         var names: MutableList<String> = mutableListOf()
         var values: MutableList<Int> = mutableListOf()
 
-        for (i: Int in 0..6) {
+        for (i: Int in 0..count) {
             names += sorts[i].name
             values += sorts[i].value / sorts[i].count
         }
