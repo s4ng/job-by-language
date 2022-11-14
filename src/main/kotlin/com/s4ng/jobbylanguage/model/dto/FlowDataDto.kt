@@ -1,5 +1,3 @@
 package com.s4ng.jobbylanguage.model.dto
 
-import java.time.ZonedDateTime
-
-data class FlowDataDto(val names: List<String>, val values: List<Int>, val time: List<ZonedDateTime>)
+data class FlowDataDto(val flowDataList: List<SingleFlowData>, val labels: List<Int>, val isMonth: Boolean)

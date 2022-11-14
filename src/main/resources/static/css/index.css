@@ -1,3 +1,7 @@
+h3 h4 {
+    padding: 10px;
+}
+
 #main-container {
     display: flex;
     flex-direction: column;
@@ -7,7 +11,8 @@
 .title-container {
     display: flex;
     justify-content: center;
-    padding: 40px;
+    padding-bottom: 40px;
+    padding-top: 40px;
     background-color: #F9FAFB;
 }
 
@@ -24,7 +29,35 @@
 
     display: inline-block;
     padding: 20px;
-    width: 600px;
+    width: 800px;
+}
+
+.chart-container {
+    width: 800px;
+    height: 500px;
+}
+
+.mini-chart-container {
+    width: 800px;
+    height: 400px;
+}
+
+@media (max-width: 420px) {
+    .chart-container, .mini-chart-container {
+        height: 40vh;
+        width: 90vw;
+    }
+    h2 {
+        font-size: large;
+    }
+
+    .title-container {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        background-color: #F9FAFB;
+    }
 }
 
 #footer {

@@ -9,72 +9,88 @@
     <title>프로그래밍 언어별 채용공고 통계</title>
 </head>
 <body>
-    <div id="main-container">
-        <div class="title-container">
-            <h2>프로그래밍 언어별 채용공고 통계</h2>
-        </div>
-        <div class="statistics statistics-1">
-            <div class="statistics-container">
-                <h3>언어별 통계</h3>
-                <div>
-                    <h4>지난 한 달간 가장 인기있는 언어</h4>
-                    <canvas id="language-rank" width="600" height="600"></canvas>
+<div id="main-container">
+    <div class="title-container">
+        <h2>프로그래밍 언어별 채용공고 통계</h2>
+    </div>
+    <div class="statistics statistics-1">
+        <div class="statistics-container">
+            <h3>언어별 통계</h3>
+            <div>
+                <h4>지난 한 달간 가장 인기있는 언어</h4>
+                <div class="chart-container">
+                    <canvas id="language-rank"></canvas>
                 </div>
-                <div>
-                    <h4>1년간 언어별 추이</h4>
-                    개발중
-<!--                    <canvas id="language-flow" width="600" height="600"></canvas>-->
+            </div>
+            <div style="height: 30px"></div>
+            <div>
+                <h4>프로그래밍 언어별 추이</h4>
+                <div class="chart-container">
+                    <canvas id="language-flow"></canvas>
                 </div>
             </div>
         </div>
-        <div class="statistics statistics-2">
-            <div class="statistics-container">
-                <h3>프레임워크별 통계</h3>
-                <div>
-                    <h4>지난 한 달간 가장 인기있는 프레임워크</h4>
-                    <canvas id="framework-rank" width="600" height="600"></canvas>
-                </div>
-                <div>
-                    <h4>1년간 프레임워크별 추이</h4>
-                    개발중
-<!--                    <canvas id="framework-flow" width="600" height="600"></canvas>-->
+    </div>
+    <div class="statistics statistics-2">
+        <div class="statistics-container">
+            <h3>프레임워크별 통계</h3>
+            <div>
+                <h4>지난 한 달간 가장 인기있는 프레임워크</h4>
+                <div class="chart-container">
+                    <canvas id="framework-rank"></canvas>
                 </div>
             </div>
-        </div>
-        <div class="statistics statistics-1">
-            <div class="statistics-container">
-                <h3>데이터베이스별 통계</h3>
-                <div>
-                    <h4>지난 한 달간 가장 인기있는 데이터베이스</h4>
-                    <canvas id="database-rank" width="600" height="600"></canvas>
-                </div>
-                <div>
-                    <h4>1년간 데이터베이스별 추이</h4>
-                    개발중
-<!--                    <canvas id="database-flow" width="600" height="600"></canvas>-->
-                </div>
-            </div>
-        </div>
-        <div class="statistics statistics-2">
-            <div class="statistics-container">
-                <h3>번외 : 가장 인기없는 언어, 프레임워크</h3>
-                <div>
-                    <h4>지난 한 달간 가장 인기없는 언어</h4>
-                    <canvas id="low-language-rank" width="600" height="450"></canvas>
-                </div>
-                <div>
-                    <h4>지난 한 달간 가장 인기없는 프레임워크</h4>
-                    <canvas id="low-framework-rank" width="600" height="450"></canvas>
+            <div style="height: 30px"></div>
+            <div>
+                <h4>프레임워크별 추이</h4>
+                <div class="chart-container">
+                    <canvas id="framework-flow"></canvas>
                 </div>
             </div>
         </div>
     </div>
     <div class="statistics statistics-1">
-        <div id="footer">
-            <h6>ⓒ2022, <a href="https://github.com/s4ng">Lee Sang-geun</a></h6>
+        <div class="statistics-container">
+            <h3>데이터베이스별 통계</h3>
+            <div>
+                <h4>지난 한 달간 가장 인기있는 데이터베이스</h4>
+                <div class="chart-container">
+                    <canvas id="database-rank"></canvas>
+                </div>
+            </div>
+            <div style="height: 30px"></div>
+            <div>
+                <h4>데이터베이스별 추이</h4>
+                <div class="chart-container">
+                    <canvas id="database-flow"></canvas>
+                </div>
+            </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
-    <script src="/js/Chart.js"></script>
+    <div class="statistics statistics-2">
+        <div class="statistics-container">
+            <h3>번외 : 가장 인기없는 언어, 프레임워크</h3>
+            <div>
+                <h4>지난 한 달간 가장 인기없는 언어</h4>
+                <div class="mini-chart-container">
+                    <canvas id="low-language-rank"></canvas>
+                </div>
+            </div>
+            <div>
+                <h4>지난 한 달간 가장 인기없는 프레임워크</h4>
+                <div class="mini-chart-container">
+                    <canvas id="low-framework-rank"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="statistics statistics-1">
+    <div id="footer">
+        <h6>ⓒ2022, <a href="https://github.com/s4ng">Lee Sang-geun</a></h6>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+<script src="/js/Chart.js"></script>
 </body>
 </html>

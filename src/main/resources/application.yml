@@ -11,8 +11,6 @@ spring:
     username: ENC(7wSa+670EQUGvLen3aTkUA==)
     password: ENC(d9MQfG/nLHcIWXk2Ai5YPgYa+a6w/9Xp)
     driver-class-name: com.mysql.cj.jdbc.Driver
-  jackson:
-    property-naming-strategy: SNAKE_CASE
 
   jpa:
     hibernate:
