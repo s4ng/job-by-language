@@ -37,9 +37,9 @@ class MainService(@Autowired val jobOpeningRepository: JobOpeningRepository) {
                 languageRank = this.createRankDto(languageEntities, true),
                 languageFlow = createFlowDto(languageEntities),
                 frameworkRank = this.createRankDto(frameworkEntities, true),
-                frameworkFlow = createFlowDto(languageEntities),
+                frameworkFlow = createFlowDto(frameworkEntities),
                 databaseRank = this.createRankDto(databaseEntities, true),
-                databaseFlow = createFlowDto(languageEntities),
+                databaseFlow = createFlowDto(databaseEntities),
                 lowLanguageRank = this.createRankDto(languageEntities, false),
                 lowFrameworkRank = this.createRankDto(frameworkEntities, false)
         )

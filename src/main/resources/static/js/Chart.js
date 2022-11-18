@@ -75,7 +75,7 @@ fetch('/data')
         });
 
         let frameworkLabels = [];
-        if(data.languageFlow.isMonth) {
+        if(data.frameworkFlow.isMonth) {
             for(let i = 0; i < data.frameworkFlow.labels.size; i++) {
                 frameworkLabels += MONTHS[data.frameworkFlow.labels[i] - 1]
             }
