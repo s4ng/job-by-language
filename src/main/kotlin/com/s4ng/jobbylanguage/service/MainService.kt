@@ -70,7 +70,7 @@ class MainService(@Autowired val jobOpeningRepository: JobOpeningRepository) {
             top7StackNames += sorts[i].name
         }
 
-        val isMonth: Boolean = jobOpenings[0].createdTime.isBefore(ZonedDateTime.now().minusDays(61L))
+        val isMonth: Boolean = jobOpenings[0].createdTime.isBefore(ZonedDateTime.now().minusDays(91L))
 
         val flowData: MutableList<SingleFlowData> = mutableListOf()
         val labels: MutableList<Int> = mutableListOf()
