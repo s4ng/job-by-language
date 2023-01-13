@@ -20,16 +20,16 @@ fetch('/data')
                 }]
             },
             options: {
-               maintainAspectRatio: false,
+                maintainAspectRatio: false,
                 responsive: true,
                 indexAxis: 'y'
             }
         });
 
         let languageLabels = [];
-        if(data.languageFlow.isMonth) {
-            for(let i = 0; i < data.languageFlow.labels.size; i++) {
-                languageLabels += MONTHS[data.languageFlow.labels[i] - 1]
+        if (data.languageFlow.isMonth) {
+            for (let i = 0; i < data.languageFlow.labels.length; i++) {
+                languageLabels.push(MONTHS[data.languageFlow.labels[i] - 1])
             }
         } else {
             languageLabels = data.languageFlow.labels
@@ -75,9 +75,9 @@ fetch('/data')
         });
 
         let frameworkLabels = [];
-        if(data.frameworkFlow.isMonth) {
-            for(let i = 0; i < data.frameworkFlow.labels.size; i++) {
-                frameworkLabels += MONTHS[data.frameworkFlow.labels[i] - 1]
+        if (data.frameworkFlow.isMonth) {
+            for (let i = 0; i < data.frameworkFlow.labels.length; i++) {
+                frameworkLabels.push(MONTHS[data.frameworkFlow.labels[i] - 1])
             }
         } else {
             frameworkLabels = data.frameworkFlow.labels
@@ -123,9 +123,9 @@ fetch('/data')
         });
 
         let databaseLabels = [];
-        if(data.databaseFlow.isMonth) {
-            for(let i = 0; i < data.databaseFlow.labels.size; i++) {
-                databaseLabels += MONTHS[data.databaseFlow.labels[i] - 1]
+        if (data.databaseFlow.isMonth) {
+            for (let i = 0; i < data.databaseFlow.labels.length; i++) {
+                databaseLabels.push(MONTHS[data.databaseFlow.labels[i] - 1])
             }
         } else {
             databaseLabels = data.databaseFlow.labels
