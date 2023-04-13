@@ -9,7 +9,7 @@ spring:
     url: ENC(Nsv9fohdNbgqHIwwzTZvNzDr00FSSuOkjxKpeV1Qp3XoYwAn3dZKejdrL9YHsQsRPjDcZ4Imdm+G0P72mVktwqIeUqagIxaW4UFdV36GvGaQoIpoxuUSrRGr2zrfHazS)
 #    url: jdbc:mysql://129.154.49.47:3306/jobbylanguage
     username: ENC(7wSa+670EQUGvLen3aTkUA==)
-    password: ENC(d9MQfG/nLHcIWXk2Ai5YPgYa+a6w/9Xp)
+    password: ENC(zOBXpxCJyFQ5HNzLOIDFxg==)
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
