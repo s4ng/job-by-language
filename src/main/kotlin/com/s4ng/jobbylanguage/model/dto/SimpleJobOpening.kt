@@ -10,4 +10,8 @@ data class SimpleJobOpening(val name: String,
         this.value += value
         this.count++
     }
+
+    fun addOnlyValue(value: Int) {
+        this.value += value
+    }
 }
